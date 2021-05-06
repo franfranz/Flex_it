@@ -1,5 +1,5 @@
 # Noun_inflection_ITA
-Database of frequencies of word forms of italian nouns, annotated for morphological inflection, gender, number, inflectional class.  
+Database of frequencies of word forms of italian nouns, annotated for morphological inflection, gender, number, inflectional class. The data were obrained
 
 ## Contents 
 ### Database
