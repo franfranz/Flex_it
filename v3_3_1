@@ -3,7 +3,7 @@
 #
 #     N O U N   I N F L E C T I O N
 #
-#     Ver 3.3.0 
+#     Ver 3.3.1 
 #
 #     https://github.com/franfranz/Noun_inflection_ITA
 #
@@ -113,7 +113,8 @@ roundnum = 3
 
 # input directory
 #inwd <- '/Users/valentinapescuma/Documents/PhD/ItalianMorphophonolgy'
-inwd="C:\\Users\\FF\\Documents\\Analisi varie\\Italian Morphophonology\\noun_lists_v2.0.0"
+inwd=getwd()
+#inwd="C:\\Users\\FF\\Documents\\Analisi varie\\Italian Morphophonology\\noun_lists_v2.0.0"
 
 # output directories
 outwd=inwd
@@ -124,7 +125,7 @@ outwd=inwd
 
 
 # filename of the itwac list currently in use
-  # currently using the "raw" version
+# currently using the "raw" version
 #thefilename_itwac="itwac_nouns_lemmas_raw_2_0_0.csv"
 
 thefilename_itwac="itwac_nouns_lemmas_notail_2_0_0.csv"
@@ -230,13 +231,13 @@ postab=table(nouns_all$POS)
 
 mygraph_num_allnouns_types %<a-% { 
   barplot(postab, 
-        main = "Number of noun types \n per inflectional feature",
-        ylab = "Frequency",
-        ylim = c(0,12000),
-        col=pal_01, 
-        border = bar_bor1, 
-        density= plot_dens_typ,
-        angle= plot_ang_typ)
+          main = "Number of noun types \n per inflectional feature",
+          ylab = "Frequency",
+          ylim = c(0,12000),
+          col=pal_01, 
+          border = bar_bor1, 
+          density= plot_dens_typ,
+          angle= plot_ang_typ)
 }
 mygraph_num_allnouns_types
 
@@ -298,20 +299,20 @@ alln_ms$POS=as.factor(as.character(alln_ms$POS))
 
 # what nouns are present with the same form in the four features ("portavoce", reporter")
 all_nouns_amb01fp=alln_fp[(alln_fp$Form %in% alln_fs$Form==T)
-                         &(alln_fp$Form %in% alln_mp$Form==T)
-                         &(alln_fp$Form %in% alln_ms$Form==T), ]
+                          &(alln_fp$Form %in% alln_mp$Form==T)
+                          &(alln_fp$Form %in% alln_ms$Form==T), ]
 
 all_nouns_amb01fs=alln_fs[(alln_fs$Form %in% alln_fp$Form==T)
-                         &(alln_fs$Form %in% alln_mp$Form==T)
-                         &(alln_fs$Form %in% alln_ms$Form==T), ]
+                          &(alln_fs$Form %in% alln_mp$Form==T)
+                          &(alln_fs$Form %in% alln_ms$Form==T), ]
 
 all_nouns_amb01mp=alln_mp[(alln_mp$Form %in% alln_fp$Form==T)
-                         &(alln_mp$Form %in% alln_fs$Form==T)
-                         &(alln_mp$Form %in% alln_ms$Form==T), ]
+                          &(alln_mp$Form %in% alln_fs$Form==T)
+                          &(alln_mp$Form %in% alln_ms$Form==T), ]
 
 all_nouns_amb01ms=alln_ms[(alln_ms$Form %in% alln_fp$Form==T)
-                         &(alln_ms$Form %in% alln_fs$Form==T)
-                         &(alln_ms$Form %in% alln_mp$Form==T), ]
+                          &(alln_ms$Form %in% alln_fs$Form==T)
+                          &(alln_ms$Form %in% alln_mp$Form==T), ]
 
 summary((unique(all_nouns_amb01fp$Form)==unique(all_nouns_amb01fs$Form) ) 
         & (unique(all_nouns_amb01fp$Form))== (unique(all_nouns_amb01ms$Form))
@@ -341,16 +342,16 @@ length(nouns_all$Form) - length(all_nouns_01$Form)== length(all_nouns_amb01$Form
 
 # what nouns are present with the same form in fp, fs, mp and not in ms
 all_nouns_amb02fp=alln_fp[(alln_fp$Form %in% alln_fs$Form==T)
-                         &(alln_fp$Form %in% alln_mp$Form==T)
-                         &(alln_fp$Form %in% alln_ms$Form==F), ]
+                          &(alln_fp$Form %in% alln_mp$Form==T)
+                          &(alln_fp$Form %in% alln_ms$Form==F), ]
 
 all_nouns_amb02fs=alln_fs[(alln_fs$Form %in% alln_fp$Form==T)
-                         &(alln_fs$Form %in% alln_mp$Form==T)
-                         &(alln_fs$Form %in% alln_ms$Form==F), ]
+                          &(alln_fs$Form %in% alln_mp$Form==T)
+                          &(alln_fs$Form %in% alln_ms$Form==F), ]
 
 all_nouns_amb02mp=alln_mp[(alln_mp$Form %in% alln_fp$Form==T)
-                         &(alln_mp$Form %in% alln_fs$Form==T)
-                         &(alln_mp$Form %in% alln_ms$Form==F), ]
+                          &(alln_mp$Form %in% alln_fs$Form==T)
+                          &(alln_mp$Form %in% alln_ms$Form==F), ]
 
 summary((unique(all_nouns_amb02fp$Form)==unique(all_nouns_amb02fs$Form) ) 
         & (unique(all_nouns_amb02fp$Form))== (unique(all_nouns_amb02mp$Form))
@@ -381,16 +382,16 @@ length(all_nouns_01$Form) - length(all_nouns_02$Form)== length(all_nouns_amb02$F
 
 # what nouns are present with the same form in fp, fs, ms and not in mp
 all_nouns_amb03fp=alln_fp[(alln_fp$Form %in% alln_fs$Form==T)
-                         &(alln_fp$Form %in% alln_mp$Form==F)
-                         &(alln_fp$Form %in% alln_ms$Form==T), ]
+                          &(alln_fp$Form %in% alln_mp$Form==F)
+                          &(alln_fp$Form %in% alln_ms$Form==T), ]
 
 all_nouns_amb03fs=alln_fs[(alln_fs$Form %in% alln_fp$Form==T)
-                         &(alln_fs$Form %in% alln_mp$Form==F)
-                         &(alln_fs$Form %in% alln_ms$Form==T), ]
+                          &(alln_fs$Form %in% alln_mp$Form==F)
+                          &(alln_fs$Form %in% alln_ms$Form==T), ]
 
 all_nouns_amb03ms=alln_ms[(alln_ms$Form %in% alln_fp$Form==T)
-                         &(alln_ms$Form %in% alln_fs$Form==T)
-                         &(alln_ms$Form %in% alln_mp$Form==F), ]
+                          &(alln_ms$Form %in% alln_fs$Form==T)
+                          &(alln_ms$Form %in% alln_mp$Form==F), ]
 
 summary((unique(all_nouns_amb03fp$Form)==unique(all_nouns_amb03fs$Form) ) 
         & (unique(all_nouns_amb03fp$Form))== (unique(all_nouns_amb03ms$Form))
@@ -422,16 +423,16 @@ length(all_nouns_02$Form) - length(all_nouns_03$Form)== length(all_nouns_amb03$F
 # what nouns are present with the same form in fp, mp, ms and not in fs
 
 all_nouns_amb04fp=alln_fp[(alln_fp$Form %in% alln_fs$Form==F)
-                         &(alln_fp$Form %in% alln_mp$Form==T)
-                         &(alln_fp$Form %in% alln_ms$Form==T), ]
+                          &(alln_fp$Form %in% alln_mp$Form==T)
+                          &(alln_fp$Form %in% alln_ms$Form==T), ]
 
 all_nouns_amb04mp=alln_mp[(alln_mp$Form %in% alln_fp$Form==T)
-                         &(alln_mp$Form %in% alln_fs$Form==F)
-                         &(alln_mp$Form %in% alln_ms$Form==T), ]
+                          &(alln_mp$Form %in% alln_fs$Form==F)
+                          &(alln_mp$Form %in% alln_ms$Form==T), ]
 
 all_nouns_amb04ms=alln_ms[(alln_ms$Form %in% alln_fp$Form==T)
-                         &(alln_ms$Form %in% alln_fs$Form==F)
-                         &(alln_ms$Form %in% alln_mp$Form==T), ]
+                          &(alln_ms$Form %in% alln_fs$Form==F)
+                          &(alln_ms$Form %in% alln_mp$Form==T), ]
 
 
 summary((unique(all_nouns_amb04fp$Form)==unique(all_nouns_amb04mp$Form) ) 
@@ -493,16 +494,16 @@ lengdup04=lengdup04raw*lengdup04mult
 
 
 all_nouns_amb05fs=alln_fs[(alln_fs$Form %in% alln_fp$Form==F)
-                         &(alln_fs$Form %in% alln_mp$Form==T)
-                         &(alln_fs$Form %in% alln_ms$Form==T), ]
+                          &(alln_fs$Form %in% alln_mp$Form==T)
+                          &(alln_fs$Form %in% alln_ms$Form==T), ]
 
 all_nouns_amb05mp=alln_mp[(alln_mp$Form %in% alln_fp$Form==F)
-                         &(alln_mp$Form %in% alln_fs$Form==T)
-                         &(alln_mp$Form %in% alln_ms$Form==T), ]
+                          &(alln_mp$Form %in% alln_fs$Form==T)
+                          &(alln_mp$Form %in% alln_ms$Form==T), ]
 
 all_nouns_amb05ms=alln_ms[(alln_ms$Form %in% alln_fp$Form==F)
-                         &(alln_ms$Form %in% alln_fs$Form==T)
-                         &(alln_ms$Form %in% alln_mp$Form==T), ]
+                          &(alln_ms$Form %in% alln_fs$Form==T)
+                          &(alln_ms$Form %in% alln_mp$Form==T), ]
 
 
 summary((unique(all_nouns_amb05fs$Form)==unique(all_nouns_amb05mp$Form) ) 
@@ -534,13 +535,13 @@ length(all_nouns_04$Form) - length(all_nouns_05$Form)== length(all_nouns_amb05$F
 
 # what nouns are present with the same form in fp and fs and not in mp or ms 
 all_nouns_amb06fp=alln_fp[(alln_fp$Form %in% alln_fs$Form==T)
-                         &(alln_fp$Form %in% alln_mp$Form==F)
-                         &(alln_fp$Form %in% alln_ms$Form==F)
-                         , ]
+                          &(alln_fp$Form %in% alln_mp$Form==F)
+                          &(alln_fp$Form %in% alln_ms$Form==F)
+                          , ]
 
 all_nouns_amb06fs=alln_fs[(alln_fs$Form %in% alln_fp$Form==T)
-                         &(alln_fs$Form %in% alln_mp$Form==F)
-                         &(alln_fs$Form %in% alln_ms$Form==F), ]
+                          &(alln_fs$Form %in% alln_mp$Form==F)
+                          &(alln_fs$Form %in% alln_ms$Form==F), ]
 
 summary((unique(all_nouns_amb06fp$Form)==unique(all_nouns_amb06fs$Form) ) )
 
@@ -596,14 +597,14 @@ head(all_nouns_amb06)
 
 # what nouns are present with the same form in fp and mp and not in fs or ms 
 all_nouns_amb07fp=alln_fp[(alln_fp$Form %in% alln_fs$Form==F)
-                         &(alln_fp$Form %in% alln_mp$Form==T)
-                         &(alln_fp$Form %in% alln_ms$Form==F)
-                         , ]
+                          &(alln_fp$Form %in% alln_mp$Form==T)
+                          &(alln_fp$Form %in% alln_ms$Form==F)
+                          , ]
 
 
 all_nouns_amb07mp=alln_mp[(alln_mp$Form %in% alln_fp$Form==T)
-                         &(alln_mp$Form %in% alln_fs$Form==F)
-                         &(alln_mp$Form %in% alln_ms$Form==F), ]
+                          &(alln_mp$Form %in% alln_fs$Form==F)
+                          &(alln_mp$Form %in% alln_ms$Form==F), ]
 
 
 summary((unique(all_nouns_amb07fp$Form)==unique(all_nouns_amb07mp$Form) ) )
@@ -663,13 +664,13 @@ head(all_nouns_amb07)
 
 # what nouns are present with the same form in fp and ms and not in fs or mp 
 all_nouns_amb08fp=alln_fp[(alln_fp$Form %in% alln_fs$Form==F)
-                         &(alln_fp$Form %in% alln_mp$Form==F)
-                         &(alln_fp$Form %in% alln_ms$Form==T)
-                         , ]
+                          &(alln_fp$Form %in% alln_mp$Form==F)
+                          &(alln_fp$Form %in% alln_ms$Form==T)
+                          , ]
 
 all_nouns_amb08ms=alln_ms[(alln_ms$Form %in% alln_fp$Form==T)
-                         &(alln_ms$Form %in% alln_fs$Form==F)
-                         &(alln_ms$Form %in% alln_mp$Form==F), ]
+                          &(alln_ms$Form %in% alln_fs$Form==F)
+                          &(alln_ms$Form %in% alln_mp$Form==F), ]
 
 
 summary(unique(all_nouns_amb08fp$Form)==unique(all_nouns_amb08ms$Form))
@@ -748,14 +749,14 @@ all_nouns_09=all_nouns_08[!(all_nouns_08$Form %in% all_nouns_amb09$Form), ]
 # what nouns are present with the same form in fs and ms and not in fp or mp 
 
 all_nouns_amb10fs=alln_fs[(alln_fs$Form %in% alln_fp$Form==F)
-                         &(alln_fs$Form %in% alln_mp$Form==F)
-                         &(alln_fs$Form %in% alln_ms$Form==T)
-                         , ]
+                          &(alln_fs$Form %in% alln_mp$Form==F)
+                          &(alln_fs$Form %in% alln_ms$Form==T)
+                          , ]
 
 
 all_nouns_amb10ms=alln_ms[(alln_ms$Form %in% alln_fp$Form==F)
-                         &(alln_ms$Form %in% alln_fs$Form==T)
-                         &(alln_ms$Form %in% alln_mp$Form==F), ]
+                          &(alln_ms$Form %in% alln_fs$Form==T)
+                          &(alln_ms$Form %in% alln_mp$Form==F), ]
 
 
 summary((unique(all_nouns_amb10fs$Form)==unique(all_nouns_amb10ms$Form) ) )
@@ -876,7 +877,7 @@ for (eachdf in amb_nouns_all_list){
 #   OUTPUT: 
 #   a data frame with all "ambiguous types"
 setwd(outwd)
- #write.csv(amb_nouns_all, "ambiguous_forms_ITA.csv")
+#write.csv(amb_nouns_all, "ambiguous_forms_ITA.csv")
 setwd(inwd)
 # how many types were discarded?
 
@@ -901,6 +902,15 @@ ambtabformchar=  ambtabformchar[order(- ambtabformchar$fp,
 # distribution of discarded types per feature
 #
 ambtabformchar
+
+# discarded forms
+ambtabformchar_reduced=ambtabformchar
+ambtabformchar_reduced$num_of_types=apply(X=ambtabformchar_reduced, MARGIN=1, FUN=max)
+
+# number of discarded forms
+amb_forms_num=sum(ambtabformchar_reduced$num_of_types)
+# prop of discarded forms
+amb_forms_num/length(unique(nouns_all$Form))
 
 
 #  how are the suffixes distributed?
@@ -1018,19 +1028,36 @@ head(all_nouns_amb11)
 head(unamb_fp)
 unique(unamb_fp$lastchar)
 
-## Graph: number of suffixes in each feature: unambiguous nouns #--------------- mygraph_num_types_unamb_fp 
+## Graph: number of suffixes in each feature: unambiguous nouns fp #--------------- mygraph_num_types_unamb_fp 
 # 
 mygraph_num_types_unamb_fp%<a-% { 
-barplot(table(unamb_fp$lastchar),
-        beside=T,
-        col=col_fp, 
-        angle=ang_fem_typ,
-        density=dens_plu_typ, 
-        border = bar_bor1,
-        main = "Unambiguous inflection: types \n Feminine Plural"
-        )
+  barplot(table(unamb_fp$lastchar),
+          beside=T,
+          col=col_fp, 
+          angle=ang_fem_typ,
+          density=dens_plu_typ, 
+          border = bar_bor1,
+          main = "Unambiguous inflection: types \n Feminine Plural"
+  )
 }
 mygraph_num_types_unamb_fp
+
+
+fp_a=unamb_fp[unamb_fp$lastchar=="a", ]
+fp_a_typ=length(fp_a$Form)
+fp_a_tok=sum(fp_a$Freq)
+
+fp_e=unamb_fp[unamb_fp$lastchar=="e", ]
+fp_e_typ=length(fp_e$Form)
+fp_e_tok=sum(fp_e$Freq)
+
+fp_i=unamb_fp[unamb_fp$lastchar=="i", ]
+fp_i_typ=length(fp_i$Form)
+fp_i_tok=sum(fp_i$Freq)
+
+fp_o=unamb_fp[unamb_fp$lastchar=="o", ]
+fp_o_typ=length(fp_o$Form)
+fp_o_tok=sum(fp_o$Freq)
 
 
 #
@@ -1039,20 +1066,39 @@ mygraph_num_types_unamb_fp
 head(unamb_fs)
 unique(unamb_fs$lastchar)
 
-## Graph: number of suffixes in each feature: unambiguous nouns #--------------- mygraph_num_types_unamb_fs 
+unamb_fp[unamb_fp$lastchar=="a", ]
+
+## Graph: number of suffixes in each feature: unambiguous nouns fs #--------------- mygraph_num_types_unamb_fs 
 # 
 
 mygraph_num_types_unamb_fs%<a-% { 
-barplot(table(unamb_fs$lastchar),
-        beside=T,
-        col=col_fs, 
-        angle=ang_fem_typ,
-        density=dens_sin_typ, 
-        border = bar_bor1,
-        main = "Unambiguous inflection: types \n Feminine Singular"
-)
+  barplot(table(unamb_fs$lastchar),
+          beside=F,
+          col=col_fs, 
+          angle=ang_fem_typ,
+          density=dens_sin_typ, 
+          border = bar_bor1,
+          main = "Unambiguous inflection: types \n Feminine Singular"
+  )
 }
 mygraph_num_types_unamb_fs
+
+fs_a=unamb_fs[unamb_fs$lastchar=="a", ]
+fs_a_typ=length(fs_a$Form)
+fs_a_tok=sum(fs_a$Freq)
+
+fs_e=unamb_fs[unamb_fs$lastchar=="e", ]
+fs_e_typ=length(fs_e$Form)
+fs_e_tok=sum(fs_e$Freq)
+
+fs_i=unamb_fs[unamb_fs$lastchar=="i", ]
+fs_i_typ=length(fs_i$Form)
+fs_i_tok=sum(fs_i$Freq)
+
+fs_o=unamb_fs[unamb_fs$lastchar=="o", ]
+fs_o_typ=length(fs_o$Form)
+fs_o_tok=sum(fs_o$Freq)
+
 
 
 #
@@ -1061,19 +1107,37 @@ mygraph_num_types_unamb_fs
 head(unamb_mp)
 unique(unamb_mp$lastchar)
 
-## Graph: number of suffixes in each feature: unambiguous nouns #--------------- mygraph_num_types_unamb_mp 
+## Graph: number of suffixes in each feature: unambiguous nouns mp #--------------- mygraph_num_types_unamb_mp 
 # 
 mygraph_num_types_unamb_mp%<a-% { 
-barplot(table(unamb_mp$lastchar),
-        beside=T,
-        col=col_mp, 
-        angle=ang_mas_typ,
-        density=dens_plu_typ, 
-        border = bar_bor1,
-        main = "Unambiguous inflection: types \n Masculine Plural"
-)
+  barplot(table(unamb_mp$lastchar),
+          beside=T,
+          col=col_mp, 
+          angle=ang_mas_typ,
+          density=dens_plu_typ, 
+          border = bar_bor1,
+          main = "Unambiguous inflection: types \n Masculine Plural"
+  )
 }
 mygraph_num_types_unamb_mp
+
+
+mp_a=unamb_mp[unamb_mp$lastchar=="a", ]
+mp_a_typ=length(mp_a$Form)
+mp_a_tok=sum(mp_a$Freq)
+
+mp_e=unamb_mp[unamb_mp$lastchar=="e", ]
+mp_e_typ=length(mp_e$Form)
+mp_e_tok=sum(mp_e$Freq)
+
+mp_i=unamb_mp[unamb_mp$lastchar=="i", ]
+mp_i_typ=length(mp_i$Form)
+mp_i_tok=sum(mp_i$Freq)
+
+mp_o=unamb_mp[unamb_mp$lastchar=="o", ]
+mp_o_typ=length(mp_o$Form)
+mp_o_tok=sum(mp_o$Freq)
+
 
 
 #
@@ -1082,23 +1146,171 @@ mygraph_num_types_unamb_mp
 head(unamb_ms)
 unique(unamb_ms$lastchar)
 
-## Graph: number of suffixes in each feature: unambiguous nouns #--------------- mygraph_num_types_unamb_ms 
+## Graph: number of suffixes in each feature: unambiguous nouns ms #--------------- mygraph_num_types_unamb_ms 
 # 
 mygraph_num_types_unamb_ms%<a-% { 
-barplot(table(unamb_ms$lastchar),
-        beside=T,
-        col=col_ms, 
-        angle=ang_mas_typ,
-        density=dens_sin_typ, 
-        border = bar_bor1,
-        main = "Unambiguous inflection: types \n Masculine Singular"
-)
+  barplot(table(unamb_ms$lastchar),
+          beside=T,
+          col=col_ms, 
+          angle=ang_mas_typ,
+          density=dens_sin_typ, 
+          border = bar_bor1,
+          main = "Unambiguous inflection: types \n Masculine Singular"
+  )
 }
 mygraph_num_types_unamb_ms
 
-##
-##  !!INSERT TOKEN AS WELL
-##
+ms_a=unamb_ms[unamb_ms$lastchar=="a", ]
+ms_a_typ=length(ms_a$Form)
+ms_a_tok=sum(ms_a$Freq)
+
+ms_e=unamb_ms[unamb_ms$lastchar=="e", ]
+ms_e_typ=length(ms_e$Form)
+ms_e_tok=sum(ms_e$Freq)
+
+ms_i=unamb_ms[unamb_ms$lastchar=="i", ]
+ms_i_typ=length(ms_i$Form)
+ms_i_tok=sum(ms_i$Freq)
+
+ms_o=unamb_ms[unamb_ms$lastchar=="o", ]
+ms_o_typ=length(ms_o$Form)
+ms_o_tok=sum(ms_o$Freq)
+
+
+#
+# Type and token frequency per suffix
+#
+
+cols_toktyp=c( "types", "token")
+rows_char= c("a", "e", "i", "o")
+
+
+# Feminine plural
+#
+
+typnums_fp=rbind(fp_a_typ, fp_e_typ, fp_i_typ, fp_o_typ)
+toknums_fp=rbind(fp_a_tok, fp_e_tok, fp_i_tok, fp_o_tok)
+toktyp_fp=(cbind(typnums_fp, toknums_fp))
+colnames(toktyp_fp)=cols_toktyp
+rownames(toktyp_fp)=rows_char
+toktyp_fp=toktyp_fp[order(toktyp_fp[,1],toktyp_fp[,2],decreasing=T),]
+
+barplot(t(toktyp_fp), beside = T)
+
+
+
+# Feminine singular
+#
+typnums_fs=rbind(fs_a_typ, fs_e_typ, fs_i_typ, fs_o_typ)
+toknums_fs=rbind(fs_a_tok, fs_e_tok, fs_i_tok, fs_o_tok)
+toktyp_fs=(cbind(typnums_fs, toknums_fs))
+colnames(toktyp_fs)=cols_toktyp
+rownames(toktyp_fs)=rows_char
+toktyp_fs=toktyp_fs[order(toktyp_fs[,1],toktyp_fs[,2],decreasing=T),]
+
+barplot(t(toktyp_fs), beside = T)
+
+
+
+# Masculine plural
+#
+typnums_mp=rbind(mp_a_typ, mp_e_typ, mp_i_typ, mp_o_typ)
+toknums_mp=rbind(mp_a_tok, mp_e_tok, mp_i_tok, mp_o_tok)
+toktyp_mp=(cbind(typnums_mp, toknums_mp))
+colnames(toktyp_mp)=cols_toktyp
+rownames(toktyp_mp)=rows_char
+toktyp_mp=toktyp_mp[order(toktyp_mp[,1],toktyp_mp[,2],decreasing=T),]
+
+barplot(t(toktyp_mp), beside = T)
+
+
+# Masculine singular
+#
+
+typnums_ms=rbind(ms_a_typ, ms_e_typ, ms_i_typ, ms_o_typ)
+toknums_ms=rbind(ms_a_tok, ms_e_tok, ms_i_tok, ms_o_tok)
+toktyp_ms=(cbind(typnums_ms, toknums_ms))
+colnames(toktyp_ms)=c(cols_toktyp)
+rownames(toktyp_ms)=rows_char
+toktyp_ms=toktyp_ms[order(toktyp_ms[,1],toktyp_ms[,2],decreasing=T),]
+
+barplot(t(toktyp_ms), beside = T)
+toktyp_ms=as.data.frame(toktyp_ms)
+
+
+#
+#  Type and token frequency per suffix
+#  All features
+#
+# Types
+#
+feat_typs=cbind(typnums_fp, typnums_fs, typnums_mp, typnums_ms)
+colnames(feat_typs)=colcontent  
+rownames(feat_typs)=rows_char  
+
+log_feat_typs=round(log(feat_typs+1), roundnum)
+
+## Graph: number of suffixes in each feature: unambiguous nouns - types #--------------- mygraph_num_types_unamb_per_suffix 
+# 
+mygraph_num_types_unamb_per_suffix%<a-% { 
+  barplot(t(log_feat_typs), 
+          main="Distribution of noun types", 
+          xlab="Suffix",
+          ylab="Type Frequency (log)",
+          beside = F,
+          ylim=c(0,40),
+          col=pal_01, 
+          width=.2, 
+          border = bar_bor1, 
+          density =plot_dens_typ, 
+          angle = plot_ang_typ )
+  legend("topleft", legend=legendcontent, 
+         fill=pal_01, 
+         density = plot_dens_typ, 
+         angle = plot_ang_typ,
+         bty="n", ncol = 2)
+}
+mygraph_num_types_unamb_per_suffix
+
+
+#
+#  Type and token frequency per suffix
+#  All features
+#
+# Tokens
+#
+
+feat_toks=cbind(toknums_fp, toknums_fs, toknums_mp, toknums_ms)
+colnames(feat_toks)=colcontent  
+rownames(feat_toks)=rows_char  
+
+log_feat_toks=round(log(feat_toks+1), roundnum)
+
+
+## Graph: number of suffixes in each feature: unambiguous nouns - tokens #--------------- mygraph_num_tokens_unamb_per_suffix 
+# 
+mygraph_num_tokens_unamb_per_suffix%<a-% { 
+  barplot(t(log_feat_toks), 
+          main="Distribution of noun tokens", 
+          xlab="Suffix",
+          ylab="Token Frequency (log)",
+          beside = F,
+          ylim=c(0,80),
+          col=pal_01, 
+          width=.2, 
+          #border = bar_bor1, 
+          #density =plot_dens_tok, 
+          #angle = plot_ang_tok 
+          )
+  legend("topleft", legend=legendcontent, 
+         fill=pal_01, 
+       #  density = plot_dens_tok, 
+      #   angle = plot_ang_tok,
+         bty="n", ncol = 2)
+  # grid()
+}
+mygraph_num_tokens_unamb_per_suffix
+
 
 ###
 #                                   
@@ -1117,12 +1329,97 @@ mygraph_num_types_unamb_ms
 char_to_feat=as.data.frame.matrix(table( all_nouns_11$lastchar, all_nouns_11$POS))
 #colnames(char_to_feat)<-colcontent
 
-barplot(as.matrix(t(char_to_feat)), col=pal_01)
+barplot(as.matrix(t(char_to_feat)), col=pal_01, border = bar_bor2 )
+legend("topright", legendcontent, fill=pal_01, bty = "n")
 
-barplot(as.matrix(t(char_to_feat[char_to_feat$fp> 50|char_to_feat$fs> 50|char_to_feat$mp> 50|char_to_feat$ms> 50, ])))
-legend("topright", legendcontent, fill=pal_01)
 
-barplot(as.matrix((char_to_feat[char_to_feat$fp> 50|char_to_feat$fs> 50|char_to_feat$mp> 50|char_to_feat$ms> 50, ])))
+#
+#   Types
+#
+
+#add 1 to frequency in feat_toks
+feat_typs=feat_typs+1
+
+a_typ=feat_typs[1, ]
+names(a_typ)=NULL
+a_sums_typ=sum(a_typ)
+
+e_typ=feat_typs[2, ]
+names(e_typ)=NULL
+e_sums_typ=sum(e_typ)
+
+i_typ=feat_typs[3, ]
+names(i_typ)=NULL
+i_sums_typ=sum(i_typ)
+
+o_typ=feat_typs[4, ]
+names(o_typ)=NULL
+o_sums_typ=sum(o_typ)
+
+# suffix: A
+probs_a_typs=a_typ/a_sums_typ
+H_a_typs= -sum(probs_a_typs * log2(probs_a_typs))
+H_a_typs=round(H_a_typs, roundnum)
+
+# suffix: E
+probs_e_typs=e_typ/e_sums_typ
+H_e_typs= -sum(probs_e_typs * log2(probs_e_typs))
+H_e_typs=round(H_e_typs, roundnum)
+
+# suffix: I
+probs_i_typs=i_typ/i_sums_typ
+H_i_typs= -sum(probs_i_typs * log2(probs_i_typs))
+H_i_typs=round(H_i_typs, roundnum)
+
+# suffix: O
+probs_o_typs=o_typ/o_sums_typ
+H_o_typs= -sum(probs_o_typs * log2(probs_o_typs))
+H_o_typs=round(H_o_typs, roundnum)
+
+
+
+#
+#   Tokens
+#
+
+#add 1 to frequency in feat_toks
+feat_toks=feat_toks+1
+
+a_tok=feat_toks[1, ]
+names(a_tok)=NULL
+a_sums_tok=sum(a_tok)
+
+e_tok=feat_toks[2, ]
+names(e_tok)=NULL
+e_sums_tok=sum(e_tok)
+
+i_tok=feat_toks[3, ]
+names(i_tok)=NULL
+i_sums_tok=sum(i_tok)
+
+o_tok=feat_toks[4, ]
+names(o_tok)=NULL
+o_sums_tok=sum(o_tok)
+
+# suffix: A
+probs_a_toks=a_tok/a_sums_tok
+H_a_toks= -sum(probs_a_toks * log2(probs_a_toks))
+H_a_toks=round(H_a_toks, roundnum)
+
+# suffix: E
+probs_e_toks=e_tok/e_sums_tok
+H_e_toks= -sum(probs_e_toks * log2(probs_e_toks))
+H_e_toks=round(H_e_toks, roundnum)
+
+# suffix: I
+probs_i_toks=i_tok/i_sums_tok
+H_i_toks= -sum(probs_i_toks * log2(probs_i_toks))
+H_i_toks=round(H_i_toks, roundnum)
+
+# suffix: O
+probs_o_toks=o_tok/o_sums_tok
+H_o_toks= -sum(probs_o_toks * log2(probs_o_toks))
+H_o_toks=round(H_o_toks, roundnum)
 
 
 ###
@@ -1195,7 +1492,7 @@ barplot(as.matrix((char_to_feat[char_to_feat$fp> 50|char_to_feat$fs> 50|char_to_
 
 library(treemap)
 
-amb_table=as.data.frame(table(all_nouns_amb1$POS))
+amb_table=as.data.frame(table(all_nouns_amb01$POS))
 colnames(amb_table)<- list("POS", "Freq")
 amb_table$prop=amb_table$Freq/sum(amb_table$Freq)
 amb_table$prop=round(amb_table$prop, 3)
