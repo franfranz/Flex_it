@@ -3,7 +3,7 @@ Database of frequencies of word forms of italian nouns, annotated for morphologi
 
 ## Contents 
 ### Database
-The [https://github.com/franfranz/Noun_inflection_ITA/blob/main/Italian_Nouns_Inflection.csv](database) contains columns indicating: 
+The (https://github.com/franfranz/Noun_inflection_ITA/blob/main/Italian_Nouns_Inflection.csv)[database] contains columns indicating: 
 -"Form", the word form 
 -"Lemma", indication for lemma, derived from Morph-it!                
 -"Freq", raw token frequency, obtained from the ItWaC corpus
@@ -18,4 +18,4 @@ The [https://github.com/franfranz/Noun_inflection_ITA/blob/main/Italian_Nouns_In
 -"Inf_class", inflectional class, with indication of "ending of singular"_ "ending of plural"
  
 ### Code
-Code used to create the annotated database. [https://github.com/franfranz/Noun_inflection_ITA/blob/main/v3_4_0.R](v3.4.0)
+Code used to create the annotated database. (v3.4.0)[https://github.com/franfranz/Noun_inflection_ITA/blob/main/v3_4_0.R]
