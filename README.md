@@ -1,9 +1,9 @@
 # Noun_inflection_ITA
-Database of frequencies of word forms of italian nouns, annotated for morphological inflection, gender, number, inflectional class. The data were obrained
+Database of frequencies of word forms of italian nouns, annotated for morphological inflection, gender, number, inflectional class. The data were obrained from ItWac (Baroni, Bernardini, Ferraresi & Zanchetta, 2009) and Morph-It! (Zanchetta & Baroni, 2005)
 
 ## Contents 
 ### Database
-The [database](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Italian_Nouns_Inflection.csv) contains columns indicating: 
+The [Flex_ita_nouns](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Flex_ita_nouns.csv)  database, annotated for:
 -"Form", the word form \
 -"Lemma", indication for lemma, derived from Morph-it!       \         
 -"Freq", raw token frequency, obtained from the ItWaC corpus \
@@ -18,4 +18,4 @@ The [database](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Italia
 -"Inf_class", inflectional class, with indication of "ending of singular"_ "ending of plural"
  
 ### Code
-Code used to create the annotated database. [v3.4.0](https://github.com/franfranz/Noun_inflection_ITA/blob/main/v3_4_0.R)
+Code used to create the annotated database. [v3.4.1](https://github.com/franfranz/Noun_inflection_ITA/blob/main/code/Flex_ita_nouns_v3_4_1.R)
