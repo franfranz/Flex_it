@@ -1663,7 +1663,7 @@ nouns_database=nouns_database[order((nouns_database$Form), na.last = T), ]
 nouns_database$notunique_rows=duplicated(nouns_database)
 summary(nouns_database)
 nouns_database=nouns_database[nouns_database$notunique_rows==F, ]
-
+nouns_database$notunique_rows=NULL
 
 
 row.names(nouns_database)=NULL
