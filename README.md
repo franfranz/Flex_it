@@ -18,4 +18,4 @@ The [Flex_ita_nouns](https://github.com/franfranz/Noun_inflection_ITA/blob/main/
 -"Inf_class", inflectional class, with indication of "ending of singular"_ "ending of plural"
  
 ### Code
-Code used to create the annotated database. [v3.4.1](https://github.com/franfranz/Noun_inflection_ITA/blob/main/code/Flex_ita_nouns_v3_4_1.R)
+Code used to build the annotated database. [v3.4.1](https://github.com/franfranz/Noun_inflection_ITA/blob/main/code/Flex_ita_nouns_v3_4_1.R)
