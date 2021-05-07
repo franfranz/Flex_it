@@ -1,9 +1,9 @@
-# Flex -ita
+# Flex_it
 Database of frequencies of word forms of italian nouns, annotated for morphological inflection, gender, number, inflectional class. The data were obrained from ItWac (Baroni, Bernardini, Ferraresi & Zanchetta, 2009) and Morph-It! (Zanchetta & Baroni, 2005)
 
 ## Contents 
 ### Database
-[Flex_ita_nouns](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Flex_ita_nouns.csv)  database, annotated for: \
+[Flex_it_nouns](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Flex_ita_nouns.csv)  database, annotated for: \
 -"Form", the word form \
 -"Lemma", indication for lemma, derived from Morph-it! \         
 -"Freq", raw token frequency, obtained from the ItWaC corpus \
