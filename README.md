@@ -13,7 +13,7 @@ Database of frequencies of word forms of italian nouns, annotated for morphologi
 -"Baseform", lemma stripped from inflectional suffix (contains derivational affixes, where present)\
 -"Gender", gender tag (fem. - masc.)\
 -"Number", number tag (plur. - sing.)\
--"Form_amb", gender and number features in which homographs or invariant forms appear (as in "cameriere"-femm.plur / "cameriere"-masc.sing)\
+-"Form_amb", gender and number features in which homographs or invariant forms appear (as in _cameriere_-femm.plur / -masc.sing)\
 -"Ending", inflectional suffix, or last grapheme of a word\
 -"Inf_class", inflectional class, with indication of "ending of singular"_ "ending of plural"
  
