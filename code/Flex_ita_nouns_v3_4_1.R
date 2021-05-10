@@ -1,10 +1,10 @@
 ###
 #
-#     N O U N   I N F L E C T I O N
-#
+#     F L E X  _  I T 
+#                      a database of noun inflection
 #     Ver 3.4.1 
 #
-#     https://github.com/franfranz/Noun_inflection_ITA
+#     https://github.com/franfranz/Flex_it
 #
 ### 
 
