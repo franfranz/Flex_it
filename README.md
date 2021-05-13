@@ -3,6 +3,7 @@ Database of frequencies of word forms of italian nouns, annotated for morphologi
 
 ## Contents 
 ### Database
+**NOUNS*
 [Flex_it_nouns](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Flex_ita_nouns.csv)  database, annotated for: \
 -"Form", the word form \
 -"Lemma", indication for lemma, derived from Morph-it! \         
@@ -17,5 +18,7 @@ Database of frequencies of word forms of italian nouns, annotated for morphologi
 -"Ending", inflectional suffix, or last grapheme of a word\
 -"Inf_class", inflectional class, with indication of "ending of singular"_ "ending of plural"
  
+**ADJECTIVES*
+
 ### Code
 Code used to build the annotated database. [v3.4.1](https://github.com/franfranz/Noun_inflection_ITA/blob/main/code/Flex_ita_nouns_v3_4_1.R)
