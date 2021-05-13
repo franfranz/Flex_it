@@ -20,7 +20,8 @@ Database of frequencies of word forms of italian nouns, annotated for morphologi
 -"Inf_class", inflectional class, with indication of "ending of singular"_ "ending of plural"
  
 **ADJECTIVES**
-[Flex_it_adj](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Flex_ita_adj.csv)  database, annotated for: \
+
+[Flex_it_adj](https://github.com/franfranz/Flex_it/blob/main/Flex_it_adj.csv)  database, annotated for: \
 -"Form", the word form \
 -"Lemma", indication for lemma, derived from Morph-it! \         
 -"Freq", raw token frequency, obtained from the ItWaC corpus \
