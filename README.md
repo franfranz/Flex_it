@@ -21,5 +21,5 @@ Database of frequencies of word forms of italian nouns, annotated for morphologi
  
 **ADJECTIVES**
 
-### Code
+### [Code](https://github.com/franfranz/Flex_it/tree/main/code)
 Code used to build the annotated database. [v3.4.1](https://github.com/franfranz/Noun_inflection_ITA/blob/main/code/Flex_ita_nouns_v3_4_1.R)
