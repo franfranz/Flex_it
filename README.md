@@ -4,6 +4,7 @@ Database of frequencies of word forms of italian nouns, annotated for morphologi
 ## Contents 
 ### Database
 **NOUNS**
+
 [Flex_it_nouns](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Flex_ita_nouns.csv)  database, annotated for: \
 -"Form", the word form \
 -"Lemma", indication for lemma, derived from Morph-it! \         
