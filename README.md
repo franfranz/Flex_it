@@ -44,8 +44,7 @@ Code used to build the annotated databases and its descriptive stats and graphs.
 
 ### References
 
-Flex_it is based on data from [Morph-It!](https://docs.sslmit.unibo.it/doku.php?id=resources:morph-it)(Zanchetta & Baroni, 2005) and [ItWac](https://cqpweb.lancs.ac.uk/itwac/)(Baroni, Bernardini, Ferraresi & Zanchetta, 2009) 
+Flex_it are based on these lists of [nouns](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_nouns_lemmas_notail_2_0_0.csv) and [adjectives](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_adj_lemmas_notail_2_1_0.csv). The lists were obtained from [Morph-It!](https://docs.sslmit.unibo.it/doku.php?id=resources:morph-it)(Zanchetta & Baroni, 2005) and [ItWac](https://cqpweb.lancs.ac.uk/itwac/)(Baroni, Bernardini, Ferraresi & Zanchetta, 2009). 
 
- https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_adj_lemmas_notail_2_1_0.csv
  
- https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_nouns_lemmas_notail_2_0_0.csv
+ 
