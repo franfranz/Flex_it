@@ -1,6 +1,6 @@
 # Flex_it
 (REFERENCE)
-Database of frequencies of word forms of italian nouns, annotated for morphological inflection, gender, number, inflectional class. The data were obrained from ItWac (Baroni, Bernardini, Ferraresi & Zanchetta, 2009) and Morph-It! (Zanchetta & Baroni, 2005). 
+Database of frequencies of word forms of italian nouns, annotated for morphological inflection, gender, number, inflectional class. 
 
 
 ## Contents 
@@ -42,3 +42,9 @@ Code used to build the annotated databases and its descriptive stats and graphs.
 * Nouns [v3.4.1](https://github.com/franfranz/Noun_inflection_ITA/blob/main/code/Flex_ita_nouns_v3_4_1.R)
 * Adjectives 
 
+### References
+
+Flex_it is based on data from [from Morph-It!](https://docs.sslmit.unibo.it/doku.php?id=resources:morph-it)(Zanchetta & Baroni, 2005) and [ItWac](https://cqpweb.lancs.ac.uk/itwac/)(Baroni, Bernardini, Ferraresi & Zanchetta, 2009) 
+
+
+. 
