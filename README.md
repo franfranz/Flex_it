@@ -39,12 +39,12 @@ Database of frequencies of word forms of italian nouns, annotated for morphologi
 
 ### [Code](https://github.com/franfranz/Flex_it/tree/main/code)
 Code used to build the annotated databases and its descriptive stats and graphs. 
-* Nouns [v3.4.1](https://github.com/franfranz/Noun_inflection_ITA/blob/main/code/Flex_ita_nouns_v3_4_1.R)
-* Adjectives 
+* [Nouns](https://github.com/franfranz/Flex_it/blob/main/code/build_FLEXIT_nouns.R)
+* [Adjectives](https://github.com/franfranz/Flex_it/blob/main/code/build_FLEXIT_adj.R)
 
 ### References
 
-Flex_it is based on these lists of [nouns](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_nouns_lemmas_notail_2_0_0.csv) and [adjectives](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_adj_lemmas_notail_2_1_0.csv), that were obtained from [Morph-It!](https://docs.sslmit.unibo.it/doku.php?id=resources:morph-it) (Zanchetta & Baroni, 2005) and [ItWac](https://cqpweb.lancs.ac.uk/itwac/) (Baroni, Bernardini, Ferraresi & Zanchetta, 2009). 
+Flex_it is based on these lists of [nouns](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_nouns_lemmas_notail_2_0_0.csv) and [adjectives](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_adj_lemmas_notail_2_1_0.csv). The lists were obtained from data from [Morph-It!](https://docs.sslmit.unibo.it/doku.php?id=resources:morph-it) (Zanchetta & Baroni, 2005) and [ItWac](https://cqpweb.lancs.ac.uk/itwac/) (Baroni, Bernardini, Ferraresi & Zanchetta, 2009). 
 
  
  
