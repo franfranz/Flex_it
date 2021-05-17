@@ -2,8 +2,9 @@
 (REFERENCE)
 Database of frequencies of word forms of italian nouns, annotated for morphological inflection, gender, number, inflectional class. 
 
-
 ## Contents 
+Please see the documentation [] for more information. 
+
 ### Database
 **NOUNS**
 
