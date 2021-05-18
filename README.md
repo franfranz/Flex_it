@@ -7,6 +7,7 @@ Please see the [documentation](https://github.com/franfranz/Flex_it/blob/main/Fl
 
 ### Lists
 **NOUNS**
+
 [Flex_it_nouns](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Flex_ita_nouns.csv)  database, annotated for: \
 -"Form", the word form \
 -"Lemma", indication for lemma, derived from Morph-it! \         
@@ -22,6 +23,7 @@ Please see the [documentation](https://github.com/franfranz/Flex_it/blob/main/Fl
 -"Inf_class", inflectional class, with indication of "ending of singular"_ "ending of plural"
  
 **ADJECTIVES**
+
 [Flex_it_adj](https://github.com/franfranz/Flex_it/blob/main/Flex_it_adj.csv)  database, annotated for: \
 -"Form", the word form \
 -"Lemma", indication for lemma, derived from Morph-it! \         
