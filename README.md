@@ -1,3 +1,5 @@
+![flexit_v1_0_0_frontpage](https://user-images.githubusercontent.com/68060778/119030144-cde6d200-b9a9-11eb-9414-1f0b955f0c08.png)
+
 # Flex It
 (REFERENCE)
 Database of frequencies of word forms of italian nouns, annotated for morphological inflection, gender, number, inflectional class. 
