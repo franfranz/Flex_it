@@ -4,7 +4,7 @@
 Database of frequencies of word forms of italian nouns, annotated for morphological inflection, gender, number, inflectional class. 
 
 ## Contents 
-Please see the [Documentation](https://github.com/franfranz/Flex_it/blob/main/Flex_it_V1_0_0_contents.pdf) for more information about the database. 
+Please see the [Documentation](https://github.com/franfranz/Flex_it/blob/main/Flex_it_V1_0_0b_contents.pdf) for more information about the database. 
 
 ### Lists
 * [Flex It Nouns](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Flex_ita_nouns.csv) database.
