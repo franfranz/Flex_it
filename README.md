@@ -10,7 +10,7 @@ Please see the [documentation](https://github.com/franfranz/Flex_it/blob/main/Fl
 ### Lists
 **NOUNS**
 
-[Flex_it_nouns](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Flex_ita_nouns.csv)  database, annotated for: \
+[Flex It Nouns](https://github.com/franfranz/Noun_inflection_ITA/blob/main/Flex_ita_nouns.csv)  database, annotated for: \
 -"Form", the word form \
 -"Lemma", indication for lemma, derived from Morph-it! \         
 -"Freq", raw token frequency, obtained from the ItWaC corpus \
@@ -26,7 +26,7 @@ Please see the [documentation](https://github.com/franfranz/Flex_it/blob/main/Fl
  
 **ADJECTIVES**
 
-[Flex_it_adj](https://github.com/franfranz/Flex_it/blob/main/Flex_it_adj.csv)  database, annotated for: \
+[Flex It Adjectives](https://github.com/franfranz/Flex_it/blob/main/Flex_it_adj.csv)  database, annotated for: \
 -"Form", the word form \
 -"Lemma", indication for lemma, derived from Morph-it! \         
 -"Freq", raw token frequency, obtained from the ItWaC corpus \
