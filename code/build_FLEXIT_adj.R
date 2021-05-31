@@ -21,13 +21,11 @@
 #  Please make sure you have the morph-it list and the adj_lemma list before proceeding. 
 #  The adj_lemma list of word frequencies is available here (https://github.com/franfranz/Flex_it/tree/main/code)
 
-# filename of the itwac list currently in use
-thefilename_itwac="itwac_adj_lemmas_notail_2_1_0.csv"
-
-
-
 # clear ws
 rm(list=ls())
+
+# filename of the itwac list currently in use
+thefilename_itwac="itwac_adj_lemmas_notail_2_1_0.csv"
 
 # required packages: stringr, pryr, xtable, viridis 
 
