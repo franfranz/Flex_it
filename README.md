@@ -17,7 +17,7 @@ Please see the [Documentation](https://github.com/franfranz/Flex_it/blob/main/Fl
 The Flex It resources are freely available; please acknowledge their use by citing this repo. \
 This version of Flex It is a pre-release: a reference paper will be available soon. Stay tuned.
 
-Flex It is based on these lists of [nouns](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_nouns_lemmas_notail_2_0_0.csv) and [adjectives](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_adj_lemmas_notail_2_1_0.csv). \
+Flex It is based on these lists of [nouns](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_nouns_lemmas_raw_2_0_0.zip) and [adjectives](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_adj_lemmas_notail_2_1_0.csv). \
 The lists were obtained from data from [Morph-It!](https://docs.sslmit.unibo.it/doku.php?id=resources:morph-it) (Zanchetta & Baroni, 2005) and [ItWac](https://cqpweb.lancs.ac.uk/itwac/) (Baroni, Bernardini, Ferraresi & Zanchetta, 2009). 
 
 **Front image credits:**  
