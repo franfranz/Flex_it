@@ -4,14 +4,14 @@
 #
 #             +++ n o u n s +++   
 #
-#     a large scale database of inflected wordforms in Italian 
+#     a large scale database of inflected wordforms in Italian - v.1.0.1
 #
 #     https://github.com/franfranz/Flex_it 
 #
 ### 
 
 
-#   Database with the forms of inflectional suffixes in Italian adjectives 
+#   Database with the forms of inflectional suffixes in Italian nouns 
 #   
 #
 #
