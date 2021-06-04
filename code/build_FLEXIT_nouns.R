@@ -11,7 +11,7 @@
 ### 
 
 
-#   Database with the forms of inflectional suffixes in Italian adjectives 
+#   Database with the forms of inflectional suffixes in Italian nouns 
 #   
 #
 #
