@@ -16,7 +16,7 @@ Please see the [Documentation](https://github.com/franfranz/Flex_it/blob/main/Fl
 ## References
 The Flex It resources are freely available; please acknowledge their use by referring to:
 
-Pescuma, V. N. & Zanini, C., Crepaldi, D., Franzon, F. (2021) "Form and function: a study on the distribution of the inflectional endings in Italian nouns and adjectives." - Preprint available at [psyarxiv.com/tqf79](https://psyarxiv.com/tqf79)
+* Pescuma, V. N. & Zanini, C., Crepaldi, D., Franzon, F. (2021) "Form and function: a study on the distribution of the inflectional endings in Italian nouns and adjectives." - Preprint available at [psyarxiv.com/tqf79](https://psyarxiv.com/tqf79)
 
 Flex It is based on these lists of [nouns](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_nouns_lemmas_raw_2_0_0.zip) and [adjectives](https://github.com/franfranz/Word_Frequency_Lists_ITA/blob/main/itwac_adj_lemmas_notail_2_1_0.csv). \
 The lists were obtained from data from [Morph-It!](https://docs.sslmit.unibo.it/doku.php?id=resources:morph-it) (Zanchetta & Baroni, 2005) and [ItWac](https://cqpweb.lancs.ac.uk/itwac/) (Baroni, Bernardini, Ferraresi & Zanchetta, 2009). 
