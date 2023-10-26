@@ -1,7 +1,7 @@
 ![flexit_v1_0_0_frontpage](https://user-images.githubusercontent.com/68060778/119316227-ff47f200-bc76-11eb-9735-325ffe37f00e.png)
 
 # Flex It
-Database of frequencies of 71954 Italian word forms (33637 noun types and 38317 adjective types), annotated for morphological inflection, gender, number, inflectional class. 
+Database of token frequencies of 71954 Italian word forms (33637 noun types and 38317 adjective types), annotated for morphological inflection, gender, number, inflectional class. 
 
 ## Contents 
 Please see the [Documentation](https://github.com/franfranz/Flex_it/blob/main/Flex_it_V1_0_4contents.pdf) for more information about the database. 
